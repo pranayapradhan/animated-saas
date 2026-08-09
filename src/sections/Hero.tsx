@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import {
-  heroEntranceAnimation,
+  animateHero,
   heroFloatingAnimation,
 } from "../animations/heroAnimations";
 
@@ -9,7 +9,7 @@ const Hero = () => {
   const heroRef = useRef<HTMLElement>(null);
 
   useGSAP( () => {
-    heroEntranceAnimation(heroRef.current!);
+    animateHero();
     heroFloatingAnimation();
   }, { scope: heroRef});
 

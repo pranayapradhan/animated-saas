@@ -1,6 +1,82 @@
 import gsap from "gsap";
 
-export const heroEntranceAnimation = ( container: HTMLElement ) => {
+//   const timeline = gsap.timeline({
+//     defaults: {
+//       ease: "power3.out",
+//     },
+//   });
+
+//   timeline
+//     // Badge
+//     .from(".hero-badge", {
+//       y: 20,
+//       opacity: 0,
+//       duration: 0.6,
+//     })
+
+//     // Main heading
+//     .from(
+//       ".hero-title",
+//       {
+//         y: 80,
+//         opacity: 0,
+//         duration: 1,
+//         ease: "power4.out",
+//       },
+//       "-=0.25"
+//     )
+
+//     // Description
+//     .from(
+//       ".hero-description",
+//       {
+//         y: 30,
+//         opacity: 0,
+//         duration: 0.7,
+//       },
+//       "-=0.5"
+//     )
+
+//     // Buttons
+//     .from(
+//       ".hero-buttons",
+//       {
+//         y: 25,
+//         opacity: 0,
+//         duration: 0.6,
+//       },
+//       "-=0.4"
+//     )
+
+//     // Dashboard
+//     .from(
+//       ".hero-dashboard",
+//       {
+//         y: 100,
+//         opacity: 0,
+//         scale: 0.92,
+//         duration: 1.1,
+//         ease: "power3.out",
+//       },
+//       "-=0.3"
+//     )
+
+//     // Floating elements
+//     .from(
+//       ".hero-float",
+//       {
+//         scale: 0,
+//         opacity: 0,
+//         duration: 0.6,
+//         stagger: 0.15,
+//         ease: "back.out(1.7)",
+//       },
+//       "-=0.5"
+//     );
+
+//   return timeline;
+// };
+export const animateHero = () => {
   const timeline = gsap.timeline({
     defaults: {
       ease: "power3.out",
@@ -8,71 +84,47 @@ export const heroEntranceAnimation = ( container: HTMLElement ) => {
   });
 
   timeline
-    // Badge
     .from(".hero-badge", {
       y: 20,
       opacity: 0,
-      duration: 0.6,
+      duration: 0.5,
     })
-
-    // Main heading
     .from(
       ".hero-title",
       {
-        y: 80,
+        y: 50,
         opacity: 0,
-        duration: 1,
-        ease: "power4.out",
+        duration: 0.8,
       },
-      "-=0.25"
+      "-=0.2"
     )
-
-    // Description
     .from(
       ".hero-description",
       {
-        y: 30,
+        y: 20,
         opacity: 0,
-        duration: 0.7,
-      },
-      "-=0.5"
-    )
-
-    // Buttons
-    .from(
-      ".hero-buttons",
-      {
-        y: 25,
-        opacity: 0,
-        duration: 0.6,
+        duration: 0.5,
       },
       "-=0.4"
     )
-
-    // Dashboard
     .from(
-      ".hero-dashboard",
+      ".hero-buttons",
       {
-        y: 100,
+        y: 20,
         opacity: 0,
-        scale: 0.92,
-        duration: 1.1,
-        ease: "power3.out",
+        duration: 0.5,
       },
       "-=0.3"
     )
-
-    // Floating elements
     .from(
-      ".hero-float",
+      ".hero-dashboard",
       {
-        scale: 0,
+        y: 60,
         opacity: 0,
-        duration: 0.6,
-        stagger: 0.15,
-        ease: "back.out(1.7)",
+        scale: 0.95,
+        duration: 0.8,
       },
-      "-=0.5"
+      "-=0.2"
     );
 
   return timeline;
