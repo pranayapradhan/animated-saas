@@ -554,11 +554,11 @@ const Hero = () => {
         </div>
 
         {/* Trusted text */}
-        <div className="pb-16 pt-16 text-center">
+        {/* <div className="pb-16 pt-16 text-center">
           <p className="text-xs uppercase tracking-[0.2em] text-white/25">
             Trusted by modern teams
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
