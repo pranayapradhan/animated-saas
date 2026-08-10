@@ -42,7 +42,7 @@ const AISection = () => {
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-sm leading-6 text-white/40 sm:text-base">
-            NOVA AI brings your tools, tasks and ideas together
+            PRANU AI brings your tools, tasks and ideas together
             so you can focus on what actually matters.
           </p>
         </div>

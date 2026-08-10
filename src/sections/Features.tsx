@@ -124,7 +124,7 @@ const Features = () => {
               {/* Small Visual */}
               <div className="mt-10 flex items-center justify-between border-t border-white/10 pt-4">
                 <span className="text-xs text-white/20">
-                  NOVA AI
+                  PRANU AI
                 </span>
 
                 <span className="text-xs text-white/20">

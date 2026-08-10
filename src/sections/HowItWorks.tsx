@@ -8,7 +8,7 @@ const steps = [
     number: "01",
     title: "Create",
     description:
-      "Start with an idea and let NOVA AI turn it into something useful.",
+      "Start with an idea and let PRANU AI turn it into something useful.",
   },
   {
     number: "02",
