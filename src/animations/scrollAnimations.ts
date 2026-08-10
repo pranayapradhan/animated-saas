@@ -60,3 +60,43 @@ export const animateParallax = (container: HTMLElement) => {
     },
   });
 };
+
+export const animateHowItWorks = (container: HTMLElement) => {
+  const steps = container.querySelectorAll(".how-step");
+  const lines = container.querySelectorAll(".how-line-progress");
+
+  if (!steps.length) return;
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      start: "top 70%",
+      toggleActions: "play none none none",
+    },
+  });
+
+  steps.forEach((step, index) => {
+    tl.from(
+      step,
+      {
+        y: 40,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power3.out",
+      },
+      index === 0 ? 0 : "+=0.15"
+    );
+
+    if (lines[index]) {
+      tl.to(
+        lines[index],
+        {
+          width: "100%",
+          duration: 0.6,
+          ease: "power2.inOut",
+        },
+        "+=0.1"
+      );
+    }
+  });
+};
