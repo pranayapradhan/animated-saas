@@ -58,7 +58,7 @@ const AISection = () => {
               <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
 
               <span className="ml-4 text-xs text-white/30">
-                nova.ai
+                pranugi.ai
               </span>
             </div>
 
