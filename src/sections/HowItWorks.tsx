@@ -41,7 +41,7 @@ const HowItWorks = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-black px-6 py-16 sm:py-16"
+      className="bg-black px-6 py-10 sm:py-16"
     >
       <div className="mx-auto max-w-6xl">
 
