@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className="fixed left-0 top-0 z-50 w-full"
+      className="fixed left-0 top-0 z-50 w-full bg-black"
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
 

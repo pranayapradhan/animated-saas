@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
+import FadeIn from "../components/animations/FadeIn";
 import { animateFeatureCards } from "../animations/scrollAnimations";
 
 const features = [
@@ -45,31 +46,33 @@ const Features = () => {
     <section
       ref={sectionRef}
       id="features"
-      className="bg-black px-6 py-20 sm:py-20"
+      className="bg-black px-6 py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl">
 
-        {/* Heading */}
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs uppercase tracking-[0.2em] text-violet-400">
-            Powerful AI Tools
-          </p>
+        {/* Section Heading */}
+        <FadeIn y={30}>
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-violet-400">
+              Powerful AI Tools
+            </p>
 
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need
-            <br />
-            <span className="text-white/40">
-              to work smarter.
-            </span>
-          </h2>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
+              Everything you need
+              <br />
+              <span className="text-white/40">
+                to work smarter.
+              </span>
+            </h2>
 
-          <p className="mt-5 text-sm leading-6 text-white/40 sm:text-base">
-            Simple tools designed to help you automate,
-            analyze and create without slowing down.
-          </p>
-        </div>
+            <p className="mt-5 text-sm leading-6 text-white/40 sm:text-base">
+              Simple tools designed to help you automate,
+              analyze and create without slowing down.
+            </p>
+          </div>
+        </FadeIn>
 
-        {/* Cards */}
+        {/* Feature Cards */}
         <div className="mt-16 grid gap-4 md:grid-cols-3">
           {features.map((feature) => (
             <div
@@ -113,6 +116,7 @@ const Features = () => {
                 {feature.icon}
               </div>
 
+              {/* Content */}
               <h3 className="mt-8 text-lg font-medium text-white">
                 {feature.title}
               </h3>

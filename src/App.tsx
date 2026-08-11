@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import AISection from "./sections/AISection";
 import HowItWorks from "./sections/HowItWorks";
+import Testimonials from "./sections/testimonials/Testimonials";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features/>
       <HowItWorks />
       <AISection />
+      <Testimonials />
     </main>
   );
 }
