@@ -46,7 +46,7 @@ const Features = () => {
     <section
       ref={sectionRef}
       id="features"
-      className="bg-black px-6 py-14 sm:py-20"
+      className="bg-black px-6 py-14 sm:pt-16 sm:pb-16"
     >
       <div className="mx-auto max-w-6xl">
 

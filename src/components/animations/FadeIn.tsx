@@ -1,7 +1,9 @@
-import { type ReactNode, useRef } from "react";
+import {  type ReactNode, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { prefersReducedMotion } from "../../utils/reduceMotion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +25,15 @@ const FadeIn = ({
   useGSAP(() => {
     if (!elementRef.current) return;
 
+    if (prefersReducedMotion()) {
+      gsap.set(elementRef.current, {
+        opacity: 1,
+        y: 0,
+      });
+
+      return;
+    }
+
     gsap.fromTo(
       elementRef.current,
       {
@@ -35,7 +46,6 @@ const FadeIn = ({
         duration,
         delay,
         ease: "power3.out",
-
         scrollTrigger: {
           trigger: elementRef.current,
           start: "top 85%",

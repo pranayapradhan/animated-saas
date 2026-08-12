@@ -20,7 +20,7 @@ const AISection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-black px-6 py-10 sm:py-16"
+      className="relative overflow-hidden bg-black px-6 py-10 sm:pt-16 sm:pb-16"
     >
       {/* Background Glow */}
       <div className="parallax-background pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-500/10 blur-[120px]" />

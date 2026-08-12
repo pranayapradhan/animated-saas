@@ -6,7 +6,16 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   min-width: 320px;
   background: #050505;
   font-family: Inter, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
 }

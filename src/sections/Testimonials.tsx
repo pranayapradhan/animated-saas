@@ -1,35 +1,35 @@
-import FadeIn from "../../components/animations/FadeIn";
-import StaggerContainer from "../../components/animations/StaggerContainer";
-import SlideUp from "../../components/animations/SlideUp";
-import ScaleIn from "../../components/animations/ScaleIn";
+import FadeIn from "../components/animations/FadeIn";
+import StaggerContainer from "../components/animations/StaggerContainer";
+import SlideUp from "../components/animations/SlideUp";
+import ScaleIn from "../components/animations/ScaleIn";
 
 const testimonials = [
   {
     quote:
-      "PRANU changed how our team works every day. We spend less time on repetitive tasks and more time building.",
-    name: "Alex Morgan",
-    role: "Product Designer",
-    initials: "AM",
+      "PRANU gives us the clarity we need to make better decisions without spending hours analyzing everything manually.",
+    name: "Pranaya Pradhan Sainju",
+    role: "Founder",
+    initials: "PS",
   },
   {
     quote:
       "The workflows are incredibly simple to set up. PRANU helped our team move from ideas to execution much faster.",
-    name: "Sarah Chen",
+    name: "Ashish Ekten Limbu",
     role: "Product Manager",
-    initials: "SC",
+    initials: "AE",
   },
   {
     quote:
-      "PRANU gives us the clarity we need to make better decisions without spending hours analyzing everything manually.",
-    name: "Daniel Brooks",
-    role: "Founder",
-    initials: "DB",
+      "PRANU changed how our team works every day. We spend less time on repetitive tasks and more time building.",
+    name: "Bibek Neupane",
+    role: "Product Designer",
+    initials: "BN",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="bg-black px-6 py-10 sm:py-16">
+    <section className="bg-black px-6 py-10 sm:pt-16 sm:pb-16">
       <div className="mx-auto max-w-6xl">
 
         {/* Section Heading */}

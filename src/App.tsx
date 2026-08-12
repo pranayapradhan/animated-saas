@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import AISection from "./sections/AISection";
 import HowItWorks from "./sections/HowItWorks";
-import Testimonials from "./sections/testimonials/Testimonials";
+import Testimonials from "./sections/Testimonials";
 
 function App() {
   return (
