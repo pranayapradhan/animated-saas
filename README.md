@@ -5,7 +5,7 @@ featuring scroll-driven animations and reusable motion components.
 
 ## Live Demo
 
-[https://animated-saas.vercel.app/]
+https://animated-saas.vercel.app/
 
 ## Features
 
@@ -39,5 +39,5 @@ featuring scroll-driven animations and reusable motion components.
 
 ## Installation
 
-npm install
-npm run dev
+- npm install
+- npm run dev
